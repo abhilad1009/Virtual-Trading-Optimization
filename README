@@ -1,0 +1,43 @@
+With Python 3.9 or later installed, run the following commands to set up the project:
+
+$ python -m venv venv  # Create a virtual environment
+$ source ./venv/bin/activate  # Activate the virtual environment
+(venv) $ pip install -r requirements.txt  # Install the requirements
+
+-----
+With the virtual environment activated, you can run your solution with:
+
+(venv) $ python solution.py
+
+-----
+Print if the optimization does not converge
+
+(venv) $ python solution.py --raise_failure True
+
+-----
+Change maximum number of iterations for optimization routine
+
+(venv) $ python solution.py --maxiter 1000
+
+-----
+Filter to choose only non-negative bids
+
+(venv) $ python solution.py --non_negative_bids True
+
+-----
+Risk tolerance tuning
+
+(venv) $ python solution.py --tune_risk_tol True --risk_tol 100 1000 200 --risk_tune_size 0.3
+
+-----
+Change daily volume limit
+
+(venv) $ python solution.py --daily_volume_limit 200
+
+-----
+Change risk tolerance 
+
+(venv) $ python solution.py --risk_tol 700
+
+
+
